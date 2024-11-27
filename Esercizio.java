@@ -1,26 +1,34 @@
-//LEGGERE LE ISTRUZIONI NEL FILE README.md
-
-//Import di Classi Java necessarie al funzionamento del programma
 import java.util.Scanner;
 
-// Classe principale, con metodo main
 class Esercizio {
-    // Il programma parte con una chiamata a main().
+
     public static void main(String args[])
     {
-        //Variabili del programma
-        String nome;
-
-        //Creo l'oggetto in per l'input da tastiera
+        int nAtleti, i, iMin;
         Scanner in = new Scanner( System.in );
-
-        //Leggo l'input da tastiera
-        System.out.print("Inserisci il tuo nome: ");
-        nome = in.nextLine();
-
-        //Output del nome acquisito da tastiera
-        System.out.println("Ciao "+nome+"!");
-    }
-}
+        System.out.println("Quanti atleti partecipano a questa competizione?");
+        nAtleti = in.nextInt;
+        String [] nomi = new String [nAtleti];
+        String [] nazionali = new String [nAtleti];
+        float [] tempi = new float [nAtleti];
+        i = 0;
+        while (i<nomi.length) {
+            System.out.println("Come si chiama l'atleta numero " + i+1 + "?");
+            nomi[i] = in.next;
+            System.out.println("Da quale nazione proviene?");
+            nazionali[i] = in.next();
+            tempi[i] = (Math.random()*1300/100)+5;
+            i++
+        }
+        i = 0;
+        iMin = 0;
+        while (i<tempi.length) {
+            if (tempi[i] < tempi[iMin]) {
+                iMin = i;
+            }
+            i++;
+        }
+        System.out.println("Il vincitore della gara è " + nomi[iMin] + " proveniente dalla nazione " + nazionali[iMin] + " che ha finito la gara in " ++ tempi[iMin] + " secondi"); 
+        
 
 //LEGGERE LE ISTRUZIONI NEL FILE README.md
