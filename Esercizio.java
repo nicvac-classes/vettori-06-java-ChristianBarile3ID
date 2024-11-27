@@ -29,6 +29,6 @@ class Esercizio {
             i++;
         }
         System.out.println("Il vincitore della gara è " + nomi[iMin] + " proveniente dalla nazione " + nazionali[iMin] + " che ha finito la gara in " ++ tempi[iMin] + " secondi"); 
-        
-
+    }  
+}
 //LEGGERE LE ISTRUZIONI NEL FILE README.md
